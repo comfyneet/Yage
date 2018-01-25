@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Yage", "Yage\Yage.vcxproj", "{3D5B07C1-00BF-4FA6-9C2E-7E68B86B0D5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{119335AC-F349-4427-918C-1F143B15A871}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "examples\Test\Test.vcxproj", "{E750D8E7-1622-4455-8442-27F1D0B13449}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3D5B07C1-00BF-4FA6-9C2E-7E68B86B0D5C} = {3D5B07C1-00BF-4FA6-9C2E-7E68B86B0D5C}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{A455F0C9-39A8-45BF-8928-8C794AC6E513}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shaders", "Shaders", "{D5D9B302-1987-417F-AF4F-E014B856885A}"
+	ProjectSection(SolutionItems) = preProject
+		..\resources\shaders\basicPixelShader.hlsl = ..\resources\shaders\basicPixelShader.hlsl
+		..\resources\shaders\basicVertexShader.hlsl = ..\resources\shaders\basicVertexShader.hlsl
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D5B07C1-00BF-4FA6-9C2E-7E68B86B0D5C}.Debug|x64.ActiveCfg = Debug|x64
+		{3D5B07C1-00BF-4FA6-9C2E-7E68B86B0D5C}.Debug|x64.Build.0 = Debug|x64
+		{3D5B07C1-00BF-4FA6-9C2E-7E68B86B0D5C}.Debug|x86.ActiveCfg = Debug|Win32
+		{3D5B07C1-00BF-4FA6-9C2E-7E68B86B0D5C}.Debug|x86.Build.0 = Debug|Win32
+		{3D5B07C1-00BF-4FA6-9C2E-7E68B86B0D5C}.Release|x64.ActiveCfg = Release|x64
+		{3D5B07C1-00BF-4FA6-9C2E-7E68B86B0D5C}.Release|x64.Build.0 = Release|x64
+		{3D5B07C1-00BF-4FA6-9C2E-7E68B86B0D5C}.Release|x86.ActiveCfg = Release|Win32
+		{3D5B07C1-00BF-4FA6-9C2E-7E68B86B0D5C}.Release|x86.Build.0 = Release|Win32
+		{E750D8E7-1622-4455-8442-27F1D0B13449}.Debug|x64.ActiveCfg = Debug|x64
+		{E750D8E7-1622-4455-8442-27F1D0B13449}.Debug|x64.Build.0 = Debug|x64
+		{E750D8E7-1622-4455-8442-27F1D0B13449}.Debug|x86.ActiveCfg = Debug|Win32
+		{E750D8E7-1622-4455-8442-27F1D0B13449}.Debug|x86.Build.0 = Debug|Win32
+		{E750D8E7-1622-4455-8442-27F1D0B13449}.Release|x64.ActiveCfg = Release|x64
+		{E750D8E7-1622-4455-8442-27F1D0B13449}.Release|x64.Build.0 = Release|x64
+		{E750D8E7-1622-4455-8442-27F1D0B13449}.Release|x86.ActiveCfg = Release|Win32
+		{E750D8E7-1622-4455-8442-27F1D0B13449}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E750D8E7-1622-4455-8442-27F1D0B13449} = {119335AC-F349-4427-918C-1F143B15A871}
+		{D5D9B302-1987-417F-AF4F-E014B856885A} = {A455F0C9-39A8-45BF-8928-8C794AC6E513}
+	EndGlobalSection
+EndGlobal
